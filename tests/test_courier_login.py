@@ -77,10 +77,7 @@ class TestCourierLogin:
     def test_courier_return_id(self,courier):
         payload = {"login": courier["login"], "password": courier["password"]}
         response = requests.post(urls.URL_LOGIN, data=payload)
-        try:
-            response.json()['id']
-        except KeyError:
-            raise AssertionError("Не найдено поле 'id'")
+        assert 'id' in response.json()
 
 
 
