@@ -1,6 +1,5 @@
 import requests
 import urls
-from helpers.data_generator import DataGenerate
 from conftest import courier
 from conftest import data_generator
 import allure
