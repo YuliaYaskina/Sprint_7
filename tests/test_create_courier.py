@@ -6,7 +6,7 @@ import allure
 import copy
 
 class TestCourierCreation:
-    @allure.title('Проверка создания курьера')
+    @allure.title('Проверка создания курьера ')
     @allure.description('Создается новый курьер и проверяется статус-код')
     def test_courier_creation_status_code(self, data_generator):
         payload = copy.copy(data_generator)
